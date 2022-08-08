@@ -17,7 +17,7 @@ jobs:
           go-version: 1.18
 
       - name: Build
-        run: go build -v ./...
+        run: go build -v -o "./bin/hello" ./main.go
 
 #      - name: Test
 #        run: go test -v ./...
